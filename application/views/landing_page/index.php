@@ -19,9 +19,10 @@
 <body>  
 
     <!-- sidebar menu -->
-    <div class="ui vertical invertered sticky menu fixed">
+    <div class="ui sidebar inverted vertical menu my-sidebar">
+
         <div class="header item">
-            Web System
+            NimbusCore System
         </div>
         <a class="item">
         1
@@ -37,8 +38,11 @@
     <div class="pusher">
 
         <!-- vertical header menu-->
-        <div class="ui block header top segment right aligned middle aligned">
-                     
+        <div class="ui top fixed stackable menu">
+            <a class="toggle-sidebar item">
+                <i class="sidebar icon"></i>
+            </a>
+            
         </div>
     
     </div>   
@@ -46,9 +50,29 @@
     <script>
         $(document).ready(function(){
 
-           $('.ui.sidebar').sidebar('show');
+            mobile_desktop();
+
+            $('.toggle-sidebar').click(function(){
+                $('.my-sidebar').sidebar('show');
+            });         
 
         });
+        function mobile_desktop(){
+
+            var window_width = $(window).width();
+
+			if ($(window).width() < 1200) {
+				//mobile or tablet
+				
+				$('.my-sidebar').sidebar('hide');
+
+			}
+			else {
+				//desktop				
+				$('.my-sidebar').sidebar('show');
+			}            
+		}
+
     </script>
 
 </body>
