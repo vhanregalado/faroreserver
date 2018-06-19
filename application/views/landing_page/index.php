@@ -25,24 +25,33 @@
             NimbusCore System
         </div>
         <a class="item">
-        1
+        Home
         </a>
         <a class="item">
-        2
+        Features
         </a>
         <a class="item">
-        3
+        About
+        </a>
+        <a class="item">
+        Contact
         </a>
     </div>
 
     <div class="pusher">
 
         <!-- vertical header menu-->
-        <div class="ui top fixed stackable menu">
+        <div class="ui inverted top fixed stackable menu">
             <a class="toggle-sidebar item">
                 <i class="sidebar icon"></i>
             </a>
             
+            <div class="right menu">
+                <a class="ui item">
+                <i class="user icon"></i>
+                    login
+                </a>
+            </div>
         </div>
     
     </div>   
@@ -50,28 +59,28 @@
     <script>
         $(document).ready(function(){
 
-            mobile_desktop();
+            // mobile_desktop();
 
             $('.toggle-sidebar').click(function(){
                 $('.my-sidebar').sidebar('show');
             });         
 
         });
-        function mobile_desktop(){
+        // function mobile_desktop(){
 
-            var window_width = $(window).width();
+        //     var window_width = $(window).width();
 
-			if ($(window).width() < 1200) {
-				//mobile or tablet
+		// 	if ($(window).width() < 1200) {
+		// 		//mobile or tablet
 				
-				$('.my-sidebar').sidebar('hide');
+		// 		$('.my-sidebar').sidebar('hide');
 
-			}
-			else {
-				//desktop				
-				$('.my-sidebar').sidebar('show');
-			}            
-		}
+		// 	}
+		// 	else {
+		// 		//desktop				
+		// 		$('.my-sidebar').sidebar('show');
+		// 	}            
+		// }
 
     </script>
 
