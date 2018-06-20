@@ -41,7 +41,7 @@
     <div class="pusher">
 
         <!-- vertical header menu-->
-        <div class="ui inverted top fixed stackable menu">
+        <div class="ui top fixed inverted menu">
             <a class="toggle-sidebar item">
                 <i class="sidebar icon"></i>
             </a>
@@ -52,7 +52,15 @@
                     login
                 </a>
             </div>
+                        
         </div>
+
+        <div class="main-content" style="background-color:#ddd; margin-top:40px;">            
+            
+                <p style="height:100px;">test main content</p>
+            
+        </div>
+        <p style="background-color:#eee;">test</p>
     
     </div>   
     
