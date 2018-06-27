@@ -8,6 +8,8 @@
     <!-- important meta tag for responsive page -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
 
+    <link rel="icon" href="<?php echo base_url()?>assets/images/favicon.png" type="image/png">
+
     <title>Farore Home Server</title>
     <link rel="stylesheet" type="text/css" href="<?php echo base_url()?>assets/semantic_ui/semantic.min.css" />
     <script src="<?php echo base_url()?>assets/js/jquery.js"></script>
@@ -20,21 +22,21 @@
 
     <!-- sidebar menu -->
     <div class="ui sidebar inverted vertical menu my-sidebar">
-
         <div class="header item">
-            NimbusCore System
+            <img src="<?php echo base_url()?>assets/images/nimbuscore_logo.png">
         </div>
+       
         <a class="item">
-        Home
+            Home
         </a>
         <a class="item">
-        Features
+            Features
         </a>
         <a class="item">
-        About
+            About
         </a>
         <a class="item">
-        Contact
+            Contact
         </a>
     </div>
 
@@ -60,7 +62,7 @@
                 <p style="height:100px;">test main content</p>
             
         </div>
-        <p style="background-color:#eee;">test</p>
+        <div class="content-main" style="background-color:#999;">test</div>
     
     </div>   
     
