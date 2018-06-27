@@ -7,6 +7,8 @@ class MY_Controller extends CI_Controller {
         parent::__construct();        
     }
 
+    
+
     public function render_page($options = array(), $data = array()){
 
         $user_id = $this->session->userdata('user_id');
