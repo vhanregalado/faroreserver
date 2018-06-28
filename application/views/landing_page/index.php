@@ -70,6 +70,7 @@
                 <div class="ui jumbotron">
                     <div class="ui text container">
                         <h1 class="ui inverted header">Welcome to Faroreserver</h1>
+                        <h2 class="ui inverted header">home database and web server</h2>
                         
                     </div>
                     
