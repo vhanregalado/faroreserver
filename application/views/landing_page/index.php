@@ -11,9 +11,16 @@
     <link rel="icon" href="<?php echo base_url()?>assets/images/favicon.png" type="image/png">
 
     <title>Farore Home Server</title>
+
+    <!-- core links -->
+
     <link rel="stylesheet" type="text/css" href="<?php echo base_url()?>assets/semantic_ui/semantic.min.css" />
     <script src="<?php echo base_url()?>assets/js/jquery.js"></script>
     <script src="<?php echo base_url()?>assets/semantic_ui/semantic.min.js"></script>
+
+    <!-- custom links -->
+
+    <link rel="stylesheet" type="text/css" href="<?php echo base_url()?>assets/css/base_style.css" />
     <style rel="stylesheet" type="text/css">
         
     </style>
@@ -43,7 +50,7 @@
     <div class="pusher">
 
         <!-- vertical header menu-->
-        <div class="ui top fixed inverted menu">
+        <div class="ui top attached inverted menu main-menu">
             <a class="toggle-sidebar item">
                 <i class="sidebar icon"></i>
             </a>
@@ -57,12 +64,20 @@
                         
         </div>
 
-        <div class="main-content" style="background-color:#ddd; margin-top:40px;">            
+        <div class="ui attached main-content">
             
-                <p style="height:100px;">test main content</p>
+            <div class="dashboard">
+                <div class="ui jumbotron">
+                    <div class="ui text container">
+                        <h1 class="ui inverted header">Welcome to Faroreserver</h1>
+                        
+                    </div>
+                    
+                </div>
+            </div>
             
         </div>
-        <div class="content-main" style="background-color:#999;">test</div>
+        
     
     </div>   
     
