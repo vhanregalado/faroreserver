@@ -7,16 +7,17 @@ class Users_Model extends MY_Model {
         parent::__construct();        
     }
 
-    public function get_postion_id_by_users_id($user_id = 0){
+    public function get_position_id_by_users_id($user_id = 0){
         
         $record = array();
+        
         $query_string = "
         SELECT 
             u.position_id as position_id
         FROM
             users u 
         WHERE 1 = 1
-        AND u.username = '{$user_id}' 
+        AND u.id = '{$user_id}' 
         ";
 
         $query = $this->db->query($query_string);

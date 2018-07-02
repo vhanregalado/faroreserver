@@ -6,8 +6,39 @@ class MY_Controller extends CI_Controller {
     function __construct() {
         parent::__construct();        
     }
-
     
+    public function render_landing_page($options = array(), $data = array()){
+        $user_id = $this->session->userdata('user_id');
+        $position_id = $this->session->userdata('user_id');
+        
+        if(isset($options['params'])){
+            $view_params = $options['params'];
+        }
+        else{
+            $view_params = array();
+        }
+
+        if( isset($options['page_title']) ){
+            $view_params['page_title'] = $options['page_title'];
+        }
+        
+        if( isset($options['main_page']) ){
+            $view_params['main_page'] = $options['main_page'];
+        }
+        
+        if( isset($options['sub_page']) ){
+            $view_params['sub_page'] = $options['sub_page'];
+        }
+
+        $data['user_id'] = $user_id;
+
+        $view_params['copyright'] = $this->auto_copyright();
+        
+        $data['content'] = $this->load->view($options['page'], $view_params,TRUE);
+        
+        $this->load->view('construct_landing/template',$data);       
+           
+    }
 
     public function render_page($options = array(), $data = array()){
 
