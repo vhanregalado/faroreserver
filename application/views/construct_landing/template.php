@@ -12,15 +12,20 @@
 
     <title>Farore Home Server | <?php echo $page_title; ?></title>
 
+    <!-- google fonts -->
+
+    <link href="https://fonts.googleapis.com/css?family=Montserrat|Varela+Round" rel="stylesheet">
+
     <!-- core links -->
 
     <link rel="stylesheet" type="text/css" href="<?php echo base_url()?>assets/semantic_ui/semantic.min.css" />
     <script src="<?php echo base_url()?>assets/js/jquery.js"></script>
     <script src="<?php echo base_url()?>assets/semantic_ui/semantic.min.js"></script>
 
-    <!-- custom links -->
+    <!-- custom css -->
 
     <link rel="stylesheet" type="text/css" href="<?php echo base_url()?>assets/css/base_style.css" />
+    <link rel="stylesheet" type="text/css" href="<?php echo base_url()?>assets/css/common.css" />
     
 </head>
 <body>  

@@ -12,16 +12,12 @@ class Landing_page extends MY_Controller {
 
 		$position_id = $this->Users->get_position_id_by_users_id(1);
 
-		// kprint($position_id);exit;
-
-		$data['position'] = $position_id[0]['position_id'];
-
-		$data['username'] = 'vhan';		
-
+		
 		$options = array(
 			'page'		=> 'landing_page/index',
 			'params'	=> $data,
-			'page_title'=> 'Home'            
+			'page_title'=> 'Home',
+			'main_menu' => 'Home'           
 		);
 
 		$this->render_landing_page($options);

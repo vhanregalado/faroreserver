@@ -1,14 +1,8 @@
-.jumbotron {
-    min-height:200px;
+.jumbotron {    
     background-color:#3794d1;  
     padding: 2em;  
 }
 
-h1.inverted.header {
-    font-size: 3em;
-    text-align: center;
-}
-
-h2.inverted.header {
-    text-align: center;
+.jumbotron h1.inverted.header {
+    font-size: 2em;
 }
