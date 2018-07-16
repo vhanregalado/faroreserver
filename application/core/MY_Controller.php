@@ -8,8 +8,8 @@ class MY_Controller extends CI_Controller {
     }
     
     public function render_landing_page($options = array(), $data = array()){
-        $user_id = $this->session->userdata('user_id');
-        $position_id = $this->session->userdata('user_id');
+        // $user_id = $this->session->userdata('user_id');
+        // $position_id = $this->session->userdata('user_id');
         
         if(isset($options['params'])){
             $view_params = $options['params'];
@@ -30,7 +30,7 @@ class MY_Controller extends CI_Controller {
             $view_params['sub_page'] = $options['sub_page'];
         }
 
-        $data['user_id'] = $user_id;
+        // $data['user_id'] = $user_id;
 
         $view_params['copyright'] = $this->auto_copyright();
         

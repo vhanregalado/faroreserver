@@ -1,9 +1,14 @@
-h1.ui.header{
+h1.ui.header {
     font-family: 'Montserrat', sans-serif;
 }
-h2.ui.header{
+
+h2.ui.header {
     font-family: 'Montserrat', sans-serif;
-    padding-top: 20px;    
+    padding-top: 20px;
+}
+
+h1{
+    font-family: 'Monserrat', sans-serif;
 }
 
 p {
